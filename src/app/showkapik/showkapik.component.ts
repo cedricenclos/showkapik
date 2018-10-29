@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-showkapik',
+  selector: 'showkapik-showkapik',
   templateUrl: './showkapik.component.html',
   styleUrls: ['./showkapik.component.scss']
 })

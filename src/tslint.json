@@ -5,12 +5,14 @@
             true,
             "attribute",
             "app",
+            "showkapik",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
             "app",
+            "showkapik",
             "kebab-case"
         ]
     }
