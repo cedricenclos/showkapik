@@ -1,15 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ShowkapikComponent } from './showkapik.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { ShowkapikComponent } from './showkapik.component'
+import { ToolbarComponent } from './toolbar/toolbar.component'
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatCardModule, MatToolbarModule } from '@angular/material'
+import { MembersListComponent } from './members-list/members-list.component'
 
 @NgModule({
-  imports: [
-    CommonModule,
-    MatToolbarModule
-  ],
-  declarations: [ShowkapikComponent, ToolbarComponent]
+  imports: [CommonModule, MatCardModule, MatToolbarModule],
+  declarations: [ShowkapikComponent, ToolbarComponent, MembersListComponent]
 })
-export class ShowkapikModule { }
+export class ShowkapikModule {}

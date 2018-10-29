@@ -1,0 +1,8 @@
+<div class='members-list'>
+  <mat-card class='member-card' *ngFor="let member of members">
+    <mat-card-header>
+      <img mat-card-avatar [src]="member.icon" alt="">
+      <mat-card-title>{{member.nom}}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
