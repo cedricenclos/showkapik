@@ -4,7 +4,11 @@ import { ShowkapikComponent } from './showkapik.component'
 import { ToolbarComponent } from './toolbar/toolbar.component'
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MatCardModule, MatToolbarModule } from '@angular/material'
+import {
+  MatCardModule,
+  MatToolbarModule,
+  MatGridListModule
+} from '@angular/material'
 import { MembersListComponent } from './members-list/members-list.component'
 import { PresentationComponent } from './presentation/presentation.component'
 
@@ -13,7 +17,8 @@ import { PresentationComponent } from './presentation/presentation.component'
     BrowserAnimationsModule,
     CommonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule
   ],
   declarations: [
     ShowkapikComponent,

@@ -1,8 +1,15 @@
 <div class='members-list'>
-  <mat-card class='member-card' *ngFor="let member of members">
-    <mat-card-header>
-      <img mat-card-avatar [src]="member.icon" alt="">
-      <mat-card-title>{{member.nom}}</mat-card-title>
-    </mat-card-header>
-  </mat-card>
+  <mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile *ngFor="let member of members" colspan="1" rowspan="1">
+      <mat-card class='member-card'>
+        <mat-card-header>
+          <mat-card-title>{{member.nom}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img class="member-icon" [src]="member.icon" alt="">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
 </div>
