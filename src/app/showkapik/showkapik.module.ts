@@ -3,11 +3,23 @@ import { CommonModule } from '@angular/common'
 import { ShowkapikComponent } from './showkapik.component'
 import { ToolbarComponent } from './toolbar/toolbar.component'
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatCardModule, MatToolbarModule } from '@angular/material'
 import { MembersListComponent } from './members-list/members-list.component'
+import { PresentationComponent } from './presentation/presentation.component'
 
 @NgModule({
-  imports: [CommonModule, MatCardModule, MatToolbarModule],
-  declarations: [ShowkapikComponent, ToolbarComponent, MembersListComponent]
+  imports: [
+    BrowserAnimationsModule,
+    CommonModule,
+    MatCardModule,
+    MatToolbarModule
+  ],
+  declarations: [
+    ShowkapikComponent,
+    ToolbarComponent,
+    MembersListComponent,
+    PresentationComponent
+  ]
 })
 export class ShowkapikModule {}
