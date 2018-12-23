@@ -1,5 +1,14 @@
 <mat-toolbar class="toolbar">
-  <span>
-    <h1>ShowKapiK</h1>
-  </span>
+  <div class="title">
+    <span> <h1>ShowKapiK</h1> </span>
+  </div>
+  <div class="user-info" *ngIf="!twitch.isAuthenticate()">
+    <a [href]="backUrl">
+      <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" />
+    </a>
+  </div>
+  <div class="user-info" *ngIf="twitch.isAuthenticate()">
+    <p class="user">{{ twitch.user.displayName }}</p>
+    <img class="logo" [src]="twitch.user.logo" />
+  </div>
 </mat-toolbar>
