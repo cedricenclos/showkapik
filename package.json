@@ -1,6 +1,8 @@
 {
   "name": "showkapik",
   "version": "0.0.0",
+  "license": "AGPL-3.0",
+  "author": "cedricenclos",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
