@@ -1,3 +1,54 @@
 .members-list {
   margin-top: 10px;
+
+  .member-card {
+    width: 50%;
+  }
+}
+
+.member-card-content {
+  .member-logo {
+    float: left;
+    margin-right: 10px;
+  }
+  .social-network {
+    a {
+      margin: 5px;
+      mat-icon {
+        height: 20%;
+        width: 20%;
+      }
+    }
+  }
+}
+
+mat-card-header {
+  justify-content: center;
+  mat-card-title {
+    font-size: 1.8em;
+  }
+}
+
+mat-card-footer {
+  .online {
+    color: green;
+  }
+  .offline {
+    color: red;
+  }
+  .member-online {
+    display: flex;
+    flex-direction: row-reverse;
+    mat-icon {
+      align-self: flex-end;
+      margin-right: 5px;
+      margin-bottom: 3px;
+    }
+
+    span {
+      align-self: flex-end;
+      margin: 5px;
+      margin-right: 10px;
+    }
+  }
 }
