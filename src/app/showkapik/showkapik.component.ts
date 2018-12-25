@@ -25,6 +25,10 @@ export class ShowkapikComponent implements OnInit {
       'circle-slice',
       sanitizer.bypassSecurityTrustResourceUrl('assets/resources/icons/circle-slice.svg')
     )
+    iconRegistry.addSvgIcon(
+      'github',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/resources/icons/github.svg')
+    )
   }
 
   ngOnInit() {}

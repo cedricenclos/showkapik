@@ -1,0 +1,16 @@
+.footer {
+  height: 60px;
+  margin-top: 20px;
+  .copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .author {
+      margin-top: 10px;
+    }
+  }
+}
+
+mat-icon {
+  color: black;
+}

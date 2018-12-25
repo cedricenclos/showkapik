@@ -14,7 +14,8 @@ import { MembersListComponent } from './members-list/members-list.component'
 import { PresentationComponent } from './presentation/presentation.component'
 import { HttpModule } from '@angular/http'
 import { CookieService } from 'ngx-cookie-service'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http'
     MatGridListModule,
     MatIconModule,
   ],
-  declarations: [ShowkapikComponent, ToolbarComponent, MembersListComponent, PresentationComponent],
+  declarations: [ShowkapikComponent, ToolbarComponent, MembersListComponent, PresentationComponent, FooterComponent],
   providers: [CookieService],
 })
 export class ShowkapikModule {}
