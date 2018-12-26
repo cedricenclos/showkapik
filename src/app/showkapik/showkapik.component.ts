@@ -29,6 +29,10 @@ export class ShowkapikComponent implements OnInit {
       'github',
       sanitizer.bypassSecurityTrustResourceUrl('assets/resources/icons/github.svg')
     )
+    iconRegistry.addSvgIcon(
+      'discord',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/resources/icons/discord.svg')
+    )
   }
 
   ngOnInit() {}

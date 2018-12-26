@@ -1,6 +1,29 @@
 .footer {
-  height: 60px;
+  height: 200px;
   margin-top: 20px;
+
+  .discord {
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+
+    span {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    a {
+      height: 10%;
+      width: 10%;
+      mat-icon {
+        height: 100%;
+        width: 100%;
+        color: #7289da;
+      }
+    }
+  }
+
   .copyright {
     text-align: center;
     display: flex;
