@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { TwitchService } from 'src/app/core/TwitchService'
 import { User } from 'src/app/core/User'
+import { Subscription } from 'rxjs'
 
 @Component({
   selector: 'showkapik-members-list',
@@ -15,9 +16,21 @@ export class MembersListComponent implements OnInit {
   private members: User[]
 
   constructor(private t: TwitchService) {
-    this.twitch = t
     this.nbCol = 3
-    this.members = t.members()
+    t.members().subscribe((users) => {
+      this.members = users
+      this.checkLive()
+    })
+  }
+
+  checkLive() {
+    this.members.forEach((member) => {
+      this.t.isOnline(member.id).subscribe((res) => {
+        console.log(res)
+        member.online = res
+      })
+    })
+    console.log(this.members)
   }
 
   ngOnInit() {}

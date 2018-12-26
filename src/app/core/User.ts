@@ -2,7 +2,7 @@ export interface UserInfo {
   name: string
   id: string
   logo?: string
-  bio?: string
+  description?: string
   twitter?: string
   youtube?: string
   online?: boolean
@@ -31,8 +31,8 @@ export class User {
     return this._info.logo
   }
 
-  get bio() {
-    return this._info.bio
+  get description() {
+    return this._info.description
   }
 
   get name() {
@@ -45,5 +45,9 @@ export class User {
 
   get online() {
     return this._info.online
+  }
+
+  set online(online: boolean) {
+    this._info.online = online
   }
 }

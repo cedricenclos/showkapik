@@ -1,24 +1,27 @@
 .members-list {
   margin-top: 10px;
-
-  .member-card {
-    width: 50%;
-  }
+  padding-top: 100px;
 }
 
 .member-card-content {
+  display: flex;
+  flex-direction: row;
   .member-logo {
-    float: left;
     margin-right: 10px;
+    height: 50%;
+    width: 50%;
   }
   .social-network {
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     a {
+      flex-grow: 1;
+      text-align: center;
       mat-icon {
-        margin: 5px;
-        margin-top: 15px;
-        height: 15%;
-        width: 15%;
+        flex-grow: 1;
+        height: 48px;
+        width: 48px;
       }
     }
   }

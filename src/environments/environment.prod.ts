@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
   backend: {
-    url: 'showkapik.ddns.net:3000',
+    url: 'http://localhost:3000',
   },
 }
